@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Тест</title>
+	<script src="eel.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body class="background">
+<div class="header">РАСПИСАНИЕ УРОКОВ</div>
+<div class="layout">
+	<div class="rubber">
+		<div class="col1">
+			<button class="button-63" role="button" onClick="imgsrc_back()"><<<<<</button>
+		</div>
+		<div class="col2">
+			<!--<img src="img/ponedelnik.jpeg"></img>-->
+			<img id="image" src="img/ponedelnik.jpeg" align="middle" />
+			
+		</div>
+		<div class="col3">
+			<button class="button-63" role="button" onClick="imgsrc()">>>>>>
+			</button>
+		</div>
+		<script type="text/javascript">
+		var i=0;
+        var image=document.getElementById("image");
+        var imgs=new Array('img/ponedelnik.jpeg','img/vtornik.jpeg','img/sreda.jpeg');
+        function imgsrc() {
+            i++;
+            i%=imgs.length;
+            image.src = imgs[i];
+        }
+        function imgsrc_back() {
+        	i--;
+        	if (i=="-1"){
+        		i=imgs.length-1;
+        	}
+        	image.src = imgs[i];
+        }
+		</script>
+	</div>
+</div>
+</body>
+</html>

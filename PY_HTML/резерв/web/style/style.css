@@ -1,0 +1,84 @@
+.header { font-family: Georgia, serif; font-size: 200%; text-align: center; color: #000000; padding-top: 1%; font-weight: bold;}
+.layout { position: relative; margin-top: 1%}
+.layout DIV { position: absolute; height: 100%; }
+.rubber { left: 0; right: 0px; }
+.col1 {  width: 8%; left: 2% }
+.col2 {  width: 80%; left: 10%;}
+.col2 img {display: block; max-width: 90%; margin-left: auto; margin-right: auto;}
+.col3 {  width: 8%; right: 2%; }
+
+.background {
+  background: linear-gradient(132deg, #2690FF, #33FFFA, #26FF81);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*<!-- HTML !-->
+<button class="button-63" role="button">Button 63</button>*/
+
+/* CSS */
+.button-63 {
+  margin-top: 230%; 
+  align-items: center;
+  background-image: linear-gradient(144deg,#885AFA , #4846E3 60%,#4E7AFD);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 50px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 1;
+}
+
+@media (min-width: 200px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 120px;
+  }
+}
+.iconButton {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
+  right: 0.3em;
+  transition: all 0.3s;
+}
